@@ -10,13 +10,14 @@
 
     <groupId>lhb.learn</groupId>
     <artifactId>spring-boot-case</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.01</version>
     <packaging>pom</packaging>
     <name>spring-boot-case</name>
     <description>父(root)工程依赖pom</description>
 
     <modules>
         <module>spring-boot-case-dependencies</module>
+        <module>spring-boot-case-excel</module>
     </modules>
 
     <!-- 指定java jdk和编码 -->

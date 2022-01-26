@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>lhb.learn</groupId>
+        <artifactId>spring-boot-case</artifactId>
+        <version>0.0.01</version>
+        <!--        <relativePath>../pom.xml</relativePath>-->
+    </parent>
+
+    <artifactId>spring-boot-case-excel</artifactId>
+    <packaging>pom</packaging>
+    <name>spring-boot-case-excel</name>
+    <inceptionYear>2022-now</inceptionYear>
+    <description>整合excel导入导出项目</description>
+
+    <licenses>
+        <license>
+            <name>Apache 2.0</name>
+            <url>https://www.apache.org/licenses/LICENSE-2.0.txt</url>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <id>lianghongbin</id>
+            <name>Herbie Leung</name>
+            <email>782272323@qq.com</email>
+        </developer>
+    </developers>
+
+    <modules>
+        <module>easy-excel</module>
+        <module>easy-poi-excel</module>
+        <module>poi-excel</module>
+    </modules>
+    
+</project>
