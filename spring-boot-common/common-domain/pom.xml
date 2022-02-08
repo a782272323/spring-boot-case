@@ -5,16 +5,28 @@
 
     <parent>
         <groupId>learn.lhb</groupId>
-        <artifactId>spring-boot-case</artifactId>
+        <artifactId>spring-boot-common</artifactId>
         <version>0.0.01</version>
-        <!--        <relativePath>../pom.xml</relativePath>-->
+        <!--        <relativePath>../lhb-msos-dependencies/pom.xml</relativePath>-->
     </parent>
 
-    <artifactId>spring-boot-common</artifactId>
-    <packaging>pom</packaging>
-    <name>spring-boot-common</name>
-    <inceptionYear>2022-now</inceptionYear>
-    <description>通用模块</description>
+    <artifactId>common-domain</artifactId>
+    <inceptionYear>2022-Now</inceptionYear>
+    <packaging>jar</packaging>
+    <name>common-domain</name>
+    <description>通用领域模型</description>
+
+    <dependencies>
+        <!-- common begin --><!-- guava google Java开发工具 -->
+        <!-- lombok 插件 -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
+
+        <!-- common end -->
+
+    </dependencies>
 
     <licenses>
         <license>
@@ -30,10 +42,4 @@
             <email>782272323@qq.com</email>
         </developer>
     </developers>
-    
-    <modules>
-        <module>common-domain</module>
-        <module>common-utils</module>
-    </modules>
-
 </project>
