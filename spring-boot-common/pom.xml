@@ -5,30 +5,16 @@
 
     <parent>
         <groupId>learn.lhb</groupId>
-        <artifactId>spring-boot-case-excel</artifactId>
+        <artifactId>spring-boot-case</artifactId>
         <version>0.0.01</version>
-        <!--        <relativePath>../lhb-msos-dependencies/pom.xml</relativePath>-->
+        <!--        <relativePath>../pom.xml</relativePath>-->
     </parent>
 
-    <artifactId>easy-excel</artifactId>
-    <inceptionYear>2022-Now</inceptionYear>
-    <packaging>jar</packaging>
-    <name>easy-excel</name>
-    <description>easyExcel导入导出</description>
-
-    <dependencies>
-        <dependency>
-            <groupId>learn.lhb</groupId>
-            <artifactId>common-utils</artifactId>
-            <version>${project.parent.version}</version>
-        </dependency>
-        
-        <!-- easyExcel -->
-        <dependency>
-            <groupId>com.alibaba</groupId>
-            <artifactId>easyexcel</artifactId>
-        </dependency>
-    </dependencies>
+    <artifactId>spring-boot-common</artifactId>
+    <packaging>pom</packaging>
+    <name>spring-boot-common</name>
+    <inceptionYear>2022-now</inceptionYear>
+    <description>通用模块</description>
 
     <licenses>
         <license>
@@ -44,4 +30,9 @@
             <email>782272323@qq.com</email>
         </developer>
     </developers>
+    
+    <modules>
+        <module>common-utils</module>
+    </modules>
+
 </project>

@@ -5,9 +5,9 @@
 
     <!-- 依赖 root pom.xml -->
 
-    <groupId>lhb.learn</groupId>
+    <groupId>learn.lhb</groupId>
     <artifactId>spring-boot-case-dependencies</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.01</version>
     <packaging>pom</packaging>
     <name>spring-boot-case-dependencies</name>
     <inceptionYear>2022-now</inceptionYear>
@@ -16,11 +16,13 @@
     <!-- 依赖版本号管理 -->
     <properties>
         <!-- Commons -->
+        <easy-excel.version>2.2.7</easy-excel.version>
+        <hutool.version>5.7.11</hutool.version>
+        <guava.version>31.0.1-jre</guava.version>
+        <apache.common.lang3.version>3.12.0</apache.common.lang3.version>
+        <lombok.version>1.18.22</lombok.version>
         <!-- Spring Boot -->
         <spring-boot-dependencies.version>2.3.12.RELEASE</spring-boot-dependencies.version>
-        <!-- Native Cloud -->
-        <!-- 数据库相关DataSource -->
-        <!-- Others -->
 
         <!-- 此模块不推到远程仓库 -->
         <maven.deploy.skip>true</maven.deploy.skip>
@@ -52,7 +54,41 @@
                 <type>pom</type>
                 <scope>provided</scope>
             </dependency>
-            <!-- Spring Boot Begin -->
+            <!-- Spring Boot End -->
+            
+            <!-- commons begin -->
+            <!-- easy excel -->
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>easyexcel</artifactId>
+                <version>${easy-excel.version}</version>
+            </dependency>
+            <!-- hutool 工具类库 -->
+            <dependency>
+                <groupId>cn.hutool</groupId>
+                <artifactId>hutool-all</artifactId>
+                <version>${hutool.version}</version>
+            </dependency>
+            <!-- guava google Java开发工具 -->
+            <dependency>
+                <groupId>com.google.guava</groupId>
+                <artifactId>guava</artifactId>
+                <version>${guava.version}</version>
+            </dependency>
+            <!--apache common lang3 工具 -->
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-lang3</artifactId>
+                <version>${apache.common.lang3.version}</version>
+            </dependency>
+            <!-- lombok 插件 -->
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>${lombok.version}</version>
+                <scope>provided</scope>
+            </dependency>
+            <!-- commons end -->
 
         </dependencies>
     </dependencyManagement>
