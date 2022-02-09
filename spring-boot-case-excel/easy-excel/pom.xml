@@ -17,11 +17,18 @@
     <description>easyExcel导入导出</description>
 
     <dependencies>
+        <!-- base begin -->
+        <dependency>
+            <groupId>learn.lhb</groupId>
+            <artifactId>common-domain</artifactId>
+            <version>${project.parent.version}</version>
+        </dependency>
         <dependency>
             <groupId>learn.lhb</groupId>
             <artifactId>common-utils</artifactId>
             <version>${project.parent.version}</version>
         </dependency>
+        <!-- base end -->
         
         <!-- easyExcel -->
         <dependency>
